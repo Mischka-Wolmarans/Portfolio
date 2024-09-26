@@ -676,20 +676,20 @@ clientRel img {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #525252;
+  color: #fff;
   font-size: 28px;
   text-align: center;
-  background: #f4dfd7;
+  background: #000;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: #f4dfd7;
+  background: #000;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #f4dfd7;
+  border-left: 1px solid #000;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -708,9 +708,15 @@ clientRel img {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
+.portfolio-details .container {
+  max-width: 100%!important;
 }
+
+#portfolio-details-main{
+  padding:0px!important;
+}
+  
+
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
@@ -802,13 +808,12 @@ clientRel img {
   text-align: center;
 }
 
-.swiper- {
-  margin: 30px;
-}
-
 @media (max-width: 768px) {
-  .swiper- {
-    margin: 5px !important;
+  .project-intro-img{
+    padding:0px;
+  }
+  .breadcrumbs{
+    padding:0;
   }
 }
 
@@ -816,11 +821,15 @@ clientRel img {
   width: 100%;
 }
 
+.glightbox-clean .gslide-description{
+  background:none;
+}
+
 .glightbox-clean .gslide-title {
   font-size: 16px;
   font-weight: normal;
   font-family: "Lora", serif;
-  color: #525252;
+  color: #ffffff;
   margin-bottom: 19px;
   line-height: 1.4em;
 }
@@ -1245,8 +1254,12 @@ main-logo .contact .info .email:hover i,
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 20px 0;
+  padding: 0;
   background: #f9f9f9;
+}
+
+.breadcrumbs .container{
+  max-width:100%!important;
 }
 
 .breadcrumbs h2 {
